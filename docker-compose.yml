@@ -1,0 +1,7 @@
+version: '3.9'
+services:
+  state:
+    restart: always
+    build:
+      context: .
+    command: python main.py -e ${EMAIL} -p ${PASSWORD} --auth ${TYPE_AUTH}
